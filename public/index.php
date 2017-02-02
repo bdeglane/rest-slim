@@ -12,6 +12,8 @@ $configuration = [
     ],
 ];
 
+// push doctrine orm in slim service container
+// on key 'orm'
 $container = new Container($configuration);
 $container['orm'] = Database::getEntityManager();
 

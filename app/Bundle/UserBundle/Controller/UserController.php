@@ -8,6 +8,9 @@ use Slim\Http\Response;
 
 class UserController
 {
+    /**
+     * @var ContainerInterface
+     */
     protected $container;
 
     /**

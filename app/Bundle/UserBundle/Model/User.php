@@ -57,6 +57,22 @@ class User
     }
 
     /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return get_object_vars($this);
+    }
+
+    /**
+     * @return string
+     */
+    public function toJson(): string
+    {
+        return json_encode($this->toArray());
+    }
+
+    /**
      * @return int
      */
     public function getId(): int

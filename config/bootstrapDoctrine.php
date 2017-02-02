@@ -11,13 +11,13 @@ $isDevMode = true;
 
 // path to entities
 $entities = array(
-    __DIR__ . '/../app/Madame'
+    __DIR__ . '\\..\\app\\Bundle\\UserBundle\\Model\\'
 );
 $config = Setup::createAnnotationMetadataConfiguration($entities, $isDevMode);
 
 $conn = array(
     'driver' => _DBDRIVER,
-    'host' => _DBHOST,
+    'host' => _DBHOST . ':' . _DBPORT,
     'user' => _DBUSER,
     'password' => _DBPWD,
     'dbname' => _DBNAME

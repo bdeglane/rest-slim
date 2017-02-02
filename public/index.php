@@ -19,6 +19,6 @@ $container['orm'] = Database::getEntityManager();
 
 $app = new App($container);
 
-require_once '../app/Module/moduleIndex.php';
+require_once '../app/Bundle/moduleIndex.php';
 
 $app->run();

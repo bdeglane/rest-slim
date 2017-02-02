@@ -1,4 +1,5 @@
 <?php
+// import controller
+use App\Bundle\UserBundle\Controller\UserController;
 
-
-$app->get('/user', App\Bundle\UserBundle\Controller\UserController::class . ':userAction');
+$app->get('/user', UserController::class . ':userAction');
